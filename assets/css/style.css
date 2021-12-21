@@ -1,0 +1,51 @@
+@import "./utils/reboot.css";
+@import"./utils/fonts.css";
+@import "./utils/responsive.css";
+
+
+body {
+    background-color:  #f2f2f2;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image:url("../media/img/header.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:  0;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+header >  nav > ul{
+    background-color:  #7a7a52;
+    color: #f2f2f2;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+header nav ul li a {
+    /* Je debug l'affichage de l'élément avec un simple display:flex */
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+    font-size: 1em;
+    transform-origin: 50% 50%;
+    transform: scale(1);
+    transition: all linear 0.2s;
+}
+header nav ul li a:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+header div{
+    display: flex;
+}
